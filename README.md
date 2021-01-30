@@ -5,6 +5,7 @@
 * The repo contains the front-end part.
 * Data are retrieved from the extremelly user-friendly <b>Rest Countries</b> api, at https://restcountries.eu/.
 * Background image taken from https://unsplash.com/images/nature/earth.
+* Try it at https://john-atha.github.io/Country-Explorer-Page/.
 - - -
 * Developer: Giannis Athanasiou
 * Github Username: John-Atha
