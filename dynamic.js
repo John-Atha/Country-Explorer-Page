@@ -97,7 +97,7 @@ function showResult(str) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    if (window.location.href.endsWith("index.html") || window.location.href.endsWith("Country-Explorer-Page/")) {
+    if (window.location.href.includes("index.html") || window.location.href.includes("Country-Explorer-Page/")) {
         document.querySelector('#explore-choice').onclick = () => {
             window.location.href="explore.html"
         }
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href="about-us.html"
         }
     }
-    else if (window.location.href.endsWith("explore.html")) {
+    else if (window.location.href.includes("explore.html")) {
         getData();
         console.log(allCountries);
         console.log(allNames);
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    else if (window.location.href.endsWith("about-us.html")) {
+    else if (window.location.href.includes("about-us.html")) {
         document.querySelector('.home').onclick = () => {
             console.log("chose to go home");
             window.location.href="index.html"
