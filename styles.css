@@ -43,6 +43,9 @@
     }
 }
 
+html {
+    height: 100%;
+}
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -52,7 +55,7 @@ body {
     text-align: center;
     justify-content: center;
     margin:0%;
-    height:100vh;
+    height: min-content;
 }
 
 #welcome {
@@ -122,16 +125,16 @@ body {
 
 #explore-main-page, #about-page {
     position: center;
-    top: 5vh;
+    top: 5%;
 }
 
 #explore-main-page {
     display: grid;
     height: 100%;
-    width: 70vw;
+    width: 70%;
     margin-left:15vw;
     justify-content: center;
-    grid-template-rows: 10% 50% 30% 10%;
+    grid-template-rows: 10% 45% 35% 10%;
 }
 
 .title {
@@ -161,7 +164,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 15% 65%;
+    grid-template-rows: 25% 15% 60%;
     justify-content: center;
 }
 
@@ -188,9 +191,9 @@ body {
 
 #explain1 {
     grid-row: 1;
-    width:70%;
-    margin-left:15%;
-    margin-right:15%;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
 }
 
 #suggestions-box, #explain2 {
@@ -215,6 +218,7 @@ body {
     color: white;
     border: solid  rgb(4, 36, 70);
     border-radius:7px;
+    margin-top: 1%;
 }
 
 #results {
