@@ -253,9 +253,9 @@ td {
 
 #about-page {
     display: grid;
-    height: 100%;
+    height: 120%;
     grid-template-columns: 80%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-rows: 30% 90% 25%;
     justify-content: center;
 }
 
