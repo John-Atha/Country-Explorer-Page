@@ -97,7 +97,7 @@ function showResult(str) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    if (window.location.href.includes("index.html") || window.location.href.includes("Country-Explorer-Page/?")) {
+    if (window.location.href.includes("index.html") || window.location.href.endsWith("Country-Explorer-Page/") || window.location.href.includes("Country-Explorer-Page/?")) {
         document.querySelector('#explore-choice').onclick = () => {
             window.location.href="explore.html"
         }
