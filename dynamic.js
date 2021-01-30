@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    else /*if (window.location.href.endsWith("about-us.html"))*/ {
+    else if (window.location.href.endsWith("about-us.html")) {
         document.querySelector('.home').onclick = () => {
             console.log("chose to go home");
             window.location.href="index.html"
