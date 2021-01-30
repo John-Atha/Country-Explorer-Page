@@ -3,7 +3,7 @@ var allCountries;
 var countriesNumber;
 
 function getData() {
-    setTimeout(function() {}, 500);
+    setTimeout(function() {}, 1000);
     fetch('https://restcountries.eu/rest/v2/all')
     .then(response => response.json())
     .then(data => {
