@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Country Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dynamic.js"></script>
+</head>
+
+<body>
+
+    <div id="explore-main-page">
+        <div class="title">
+            Explore
+        </div>
+
+        <div id="search-bar">
+            <div id="column1">
+                <div id="explain1">Start typing the country's name</div>
+                <input type="text" id="country-input" name="country-input">
+                <img id="flag-img" src="#">
+            </div>
+            <div id="column2">
+                <div id="explain2">Pick one of the results</div>
+                <select size=10 id="suggestions-box"></select>
+            </div>
+        </div>
+
+        <table id="results">
+            <tr>
+                <td>Region</td>
+                <td id="Region"></td>
+            </tr>
+            <tr>
+                <td>Subregion</td>
+                <td id="Subregion"></td>
+            </tr>
+            <tr>
+                <td>Capital</td>
+                <td id="Capital"></td>
+            </tr>
+            <tr>
+                <td>Population</td>
+                <td id="Population"></td>
+            </tr>
+            <tr>
+                <td>Latitude</td>
+                <td id="Latitude"></td>
+            </tr>
+            <tr>
+                <td>Longtitude</td>
+                <td id="Longtitude"></td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td id="Languages"></td>
+            </tr>
+        </table>
+
+        <div id="home-button-container">
+            <button class="home" id="home-from-explore">Home</button>
+        </div>
+        
+    </div>
+    
+    <footer>
+        <p>Developer's Github:<a id="git-link" target="_blank" rel="noopener noreferrer" href="https://github.com/John-Atha">John-Atha</a></p>
+      </footer>
+
+</body>

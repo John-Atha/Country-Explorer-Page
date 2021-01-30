@@ -1,0 +1,310 @@
+@keyframes message-appearing {
+    0%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 20%;
+    }
+    50%{
+        opacity: 40%;
+    }
+    60%{
+        opacity: 60%;
+    }
+    80%{
+        opacity: 80%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes delay-appearing {
+    0%{
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    60%{
+        opacity: 20%;
+    }
+    70%{
+        opacity: 40%;
+    }
+    80%{
+        opacity: 60%;
+    }
+    90%{
+        opacity: 80%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url('nasa-Q1p7bh3SHj8-unsplash.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    text-align: center;
+    justify-content: center;
+    height:calc(100vh - (100vw - 100%));
+    width: calc(100vw - (100vw - 100%));
+    margin:0%;
+}
+
+#welcome {
+    color:white;
+    font-size: 300%;
+    margin-top: 15vh;
+    animation:
+        message-appearing 3s;
+}
+
+#main-choice {
+    margin-top: 1vh;
+    display: grid;
+    height: 40vh;
+    width: 90vw;
+    margin-left: 5vw;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 100%;
+    justify-content: center;
+    animation-name: delay-appearing;
+    animation-duration: 2s; 
+}
+
+#moto {
+    grid-row: 1;
+    color: white;
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+#init-choices {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+#explore-choice {
+    grid-column: 1;
+    margin-left: 50%;
+}
+
+#about-choice {
+    grid-column: 2;
+    margin-left: 25%;
+}
+
+#explore-choice, #about-choice, .home {
+    color: white;
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: min-content;
+    width:25%;
+    font-size: 100%;
+    margin-top: 10%;
+    background-color: black;
+    border: solid   black;
+    border-radius: 7px;
+    border-width: 500%;
+    /*box-shadow: 2px 2px 2px rgb(147, 147, 244);*/
+}
+
+#explore-choice:hover, #about-choice:hover, .home:hover {
+    font-size: larger;
+}
+
+#explore-main-page, #about-page {
+    position: center;
+    top: 5vh;
+}
+
+#explore-main-page {
+    display: grid;
+    height: 100vh;
+    width: 70vw;
+    margin-left:15vw;
+    justify-content: center;
+    grid-template-rows: 10% 40% 25% 10%;
+}
+
+.title {
+    color:white;
+    font-size: 200%;
+    margin-top: 2vh;
+    animation:
+        message-appearing 3s;
+    grid-row: 1;
+}
+
+#search-bar {
+    grid-row: 2;
+    display: grid;
+    /*grid-template-rows: 15% 25% 15% 50% auto;*/
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    animation:
+        delay-appearing 3s;
+}
+
+#column1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 15% 65%;
+    justify-content: center;
+}
+
+#column2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+}
+
+#country-input, #explain1 {
+    height: min-content;
+    width: 50%;
+    margin: 5%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+#country-input {
+    grid-row: 2;
+    margin-top: 0%;
+}
+
+#explain1 {
+    grid-row: 1;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+#suggestions-box, #explain2 {
+    margin: 5%;
+    height: min-content;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#suggestions-box {
+    grid-row: 2;
+    margin-top: 0%;
+}
+
+#explain2 {
+    grid-row: 1;
+}
+
+#explain1, #explain2 {
+    background-color: rgb(4, 36, 70);
+    color: white;
+    border: solid  rgb(4, 36, 70);
+    border-radius:7px;
+}
+
+#results {
+    grid-row: 3;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    height: 80%;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    margin-bottom:1%;
+    text-align: center;
+    animation:
+        delay-appearing 3s;
+}
+
+td {
+    text-align: center;
+    width: 50%;
+}
+
+
+#flag-img {
+    grid-row:3;
+    width: 50%;
+    margin-left:25%;
+    margin-right:25%;
+    height: 50%;
+    margin-bottom: 2%;
+}
+
+#about-page {
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 80%;
+    grid-template-rows: 25% 50% 25%;
+    justify-content: center;
+}
+
+#about-text {
+    animation:
+        delay-appearing 3s;
+    grid-row: 2;
+    color: white;
+}
+
+#home-from-about {
+    animation:
+        message-appearing 3s;
+    grid-row: 3;
+    width: 15%; 
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    margin-top: 0%;
+}
+
+#home-from-explore {
+    animation:
+        delay-appearing 3s;
+    grid-row: 4;
+    width: 15%; 
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    margin-top: 0%;
+}
+
+#api-link, #git-link {
+    color: rgb(120, 181, 247);
+    font-weight: bold;
+    font-size: 120%;
+}
+
+#api-link:hover, #git-link:hover {
+    font-size: 150%;
+}
+
+#home-button-container {
+    animation:
+        delay-appearing 3s;
+    width: 60vw;
+    margin-left: 20vw; 
+    margin-right: 20vw; 
+}
+
+footer {
+    animation:
+        message-appearing 3s;
+    position: absolute;
+    top:90vh;
+    color: white;
+}
