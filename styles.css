@@ -51,9 +51,8 @@ body {
     background-repeat: repeat;
     text-align: center;
     justify-content: center;
-    height:calc(100vh - (100vw - 100%));
-    width: calc(100vw - (100vw - 100%));
     margin:0%;
+    height:100vh;
 }
 
 #welcome {
@@ -128,11 +127,11 @@ body {
 
 #explore-main-page {
     display: grid;
-    height: 100vh;
+    height: 100%;
     width: 70vw;
     margin-left:15vw;
     justify-content: center;
-    grid-template-rows: 10% 40% 25% 10%;
+    grid-template-rows: 10% 50% 30% 10%;
 }
 
 .title {
@@ -250,7 +249,7 @@ td {
 
 #about-page {
     display: grid;
-    height: 90vh;
+    height: 100%;
     grid-template-columns: 80%;
     grid-template-rows: 25% 50% 25%;
     justify-content: center;
